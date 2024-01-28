@@ -12,7 +12,8 @@ namespace Kittysplit.Logic
         public string? EventName { get; set; }
         public string? EventDescription { get; set; }
         public string? EventLocation { get; set; }
-        public DateTime StartDate { get; set; }
-        public DateTime EndDate { get; set; }
+        public string? Currency {  get; set; }
+        public ICollection<Participant>? Participants { get; set; }
+        public ICollection<Expense>? Expenses { get; set; }
     }
 }
